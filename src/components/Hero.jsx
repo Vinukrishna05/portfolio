@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { FaDownload } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -25,16 +26,18 @@ export default function Hero() {
         MERN Stack Developer
       </motion.p>
 
-      {/* Button */}
+      {/* Resume Download Button */}
       <motion.a
-        href="#projects"
-        className="mt-8 px-8 py-4 bg-cyan-500 text-black font-semibold rounded-lg hover:bg-cyan-400 transition-colors"
+        href="/VinuKrishnanKK_Resume.pdf"
+        download="Vinukrishnan-Resume.pdf"
+        className="mt-8 px-8 py-4 flex items-center gap-2 bg-cyan-500 text-black font-semibold rounded-lg hover:bg-cyan-400 transition-colors"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
       >
-        View Projects
+         <FaDownload /> Download Resume
       </motion.a>
+
     </section>
   );
 }

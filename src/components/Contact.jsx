@@ -66,7 +66,7 @@ const Contact = () => {
         <p className="text-center text-gray-400 mt-6">
           You can also email me directly at{" "}
           <span className="text-teal-400 font-semibold">
-            vinukrishna05@gmail.com
+            vinukrishna0508@gmail.com
           </span>
         </p>
       </div>
